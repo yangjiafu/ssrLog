@@ -28,12 +28,14 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    {src: '@/plugins/router', ssr: true}
+    {src: '@/plugins/router', ssr: true},
+    '@/plugins/axios'
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/axios',
   ],
   /*
   ** Build configuration
@@ -44,5 +46,5 @@ export default {
     */
     extend(config, ctx) {
     }
-  }
+  },
 }
